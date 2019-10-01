@@ -53,6 +53,10 @@ For use on Windows, you'll need to provide the COM port assigned to the Maestro 
 
     import maestro
     m = maestro.Controller('COM3')
+
+Install the Pololu Maestro Control Center, connect to the controller, go to the Serial Settings tab, and enable the USB Dual Port mode - you need this to allow the module to connect to the controller (at least on Windows), or else the module will seem to do nothing.
+
+For typical RC servos, the values for setTarget() might be in a range of 4000 - 8000, but each device is different.
     
 ## Permission issue
 
